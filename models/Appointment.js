@@ -7,6 +7,7 @@ const appointmentSchema = new mongoose.Schema({
   businessPhone: { type: String, required: true },
   email: { type: String, required: true },
   message: { type: String },
+  date: { type: Date, required: true },
   createdAt: { type: Date, default: Date.now, expires: "1m" },
 });
 
